@@ -11,60 +11,69 @@
 
 <body>
     <div class="left">
-        <div class="title">
-            <img src="" alt="Logo">
-            <h1>Woo</h1>
+        <div>
+            <img src="./logo.png" alt="Suisei Meteor">
+            <h1>Dreamer</h1>
         </div>
+        <p>
+            Background by <a href="https://www.pixiv.net/en/users/6311273">saya</a> on <a href="https://www.pixiv.net/en/artworks/102556719">pixiv</a>
+        </p>
     </div>
 
     <div class="right">
-        <div class="top">
-            <h1>
-                This is not a real service! You know you need something like this in your life to help you realize your
-                deepest dreams. Sign up <em>now</em> to get started.
-            </h1>
-            <h1>
-                You <em>know</em> you want to.
-            </h1>
-        </div>
-        <div class="mid">
-            <h1>
-                Let's do this!
-            </h1>
-            <form action="" method="post" id="sign-up-form">
-                <div id="fname">
-                    <label for="first-name">FIRST NAME</label>
-                    <input type="text" name="first-name" id="first-name" required>
+        <form action="" method="post" id="sign-up-form">
+            <div class="top">
+                <h1>
+                    This is not a real service, but know you need something like this in your life to help you realize
+                    your deepest dreams. Sign up <em>now</em> to get started.
+                </h1>
+                <h1>
+                    You <em>know</em> you want to.
+                </h1>
+            </div>
+            <div class="mid">
+                <h1>
+                    Let's do this!
+                </h1>
+                <div>
+                    <div id="fname">
+                        <label for="first-name">*FIRST NAME</label>
+                        <input type="text" name="first-name" id="first-name" required>
+                    </div>
+                    <div id="lname">
+                        <label for="last-name">*LAST NAME</label>
+                        <input type="text" name="last-name" id="last-name" required>
+                    </div>
                 </div>
-                <div id="lname">
-                    <label for="last-name">LAST NAME</label>
-                    <input type="text" name="last-name" id="last-name" required>
+                <div>
+                    <div id="email">
+                        <label for="user-email">*EMAIL</label>
+                        <input type="email" name="user-email" id="user-email" required>
+                    </div>
+                    <div id="phone">
+                        <label for="user-phone">PHONE NUMBER (optional)</label>
+                        <input type="tel" name="user-phone" id="user-phone" pattern="^\(?\d{3}\)?(-|\s)\d{3}(-|\s)\d{4}$"
+                        placeholder="(___)-___-____" minlength="12" maxlength="14">
+                    </div>
                 </div>
-                <div id="email">
-                    <label for="user-email">EMAIL</label>
-                    <input type="email" name="user-email" id="user-email" required>
+                <div>
+                    <div id="pass">
+                        <label for="user-pass">*PASSWORD</label>
+                        <input type="password" name="user-pass" id="user-pass" required>
+                    </div>
+                    <div id="pass-confirm">
+                        <label for="user-pass-conf">*CONFIRM PASSWORD</label>
+                        <input type="password" name="user-pass-conf" id="user-pass-conf" required>
+                    </div>
                 </div>
-                <div id="phone">
-                    <label for="user-phone">PHONE NUMBER</label>
-                    <input type="tel" name="user-phone" id="user-phone" required>
-                </div>
-                <div id="pass">
-                    <label for="user-pass">PASSWORD</label>
-                    <input type="password" name="user-pass" id="user-pass" required>
-                </div>
-                <div id="pass-confirm">
-                    <label for="user-pass-conf">CONFIRM PASSWORD</label>
-                    <input type="password" name="user-pass-conf" id="user-pass-conf" required>
-                </div>
-
-            </form>
-        </div>
-        <div class="bot">
-            <button type="submit" form="sign-up-form">Create Account</button>
-            <p>
-                Already have an account? <a href="">Log in</a>
-            </p>
-        </div>
+            </div>
+            <div class="bot">
+                <button type="submit" form="sign-up-form">Create Account</button>
+                <p>
+                    Already have an account? <a href="">Log in</a>
+                </p>
+            </div>
+        </form>
     </div>
 </body>
 
